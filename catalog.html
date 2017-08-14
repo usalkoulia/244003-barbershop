@@ -32,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    
+
     <main>
       <h1>Средства для ухода</h1>
       <ul class="breadcrumbs">
@@ -44,6 +44,7 @@
         </li>
         <li class="product-page">Средства для ухода</li>
       </ul>
+      
       <form class="main-producers" action="index.html" method="post">
         <fieldset>
           <h2>Производители:</h2>
@@ -71,6 +72,7 @@
         </fieldset>
         <input type="submit" name="Show" value="Показать">
       </form>
+
       <section class="products">
         <ul>
           <li class="products-item">
@@ -135,6 +137,7 @@
           </li>
         </ul>
       </section>
+
       <ul class="pagination">
         <li>
           <a href="#">1</a>
@@ -177,5 +180,25 @@
         <a href="htmlacademy.ru" class="button">HTMLACADEMY.RU</a>
       </p>
     </footer>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          Запомните меня
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
