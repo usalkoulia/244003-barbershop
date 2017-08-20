@@ -30,7 +30,7 @@
         </ul>
         <ul class="main-enter">
           <li>
-            <a href="#" class="enter">Вход</a>
+            <a href="#" class="login">Вход</a>
           </li>
         </ul>
       </nav>
@@ -85,9 +85,15 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li class="vk"><a href="vk.com">Vkontakte</a></li>
-          <li class="facebook"><a href="facebook.com">Facebook</a></li>
-          <li class="instagram"><a href="instagram.com">Instagram</a></li>
+          <li class="vk">
+            <a href="vk.com">Vkontakte</a>
+          </li>
+          <li class="facebook">
+            <a href="facebook.com">Facebook</a>
+          </li>
+          <li class="instagram">
+            <a href="instagram.com">Instagram</a>
+          </li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -97,23 +103,36 @@
     </footer>
 
     <section class="modal modal-login">
-      <span class="modal-close">x</span>
+      <button type="button" class="modal-close">Закрыть</button>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <label for="user-login" class="visually-hidden">Логин</label>
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
         </p>
         <p>
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <label for="user-password" class="visually-hidden">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль" id="user-password">
         </p>
         <p class="login-password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
+          <label>
+            <input type="checkbox" name="remember" class="visually-hidden">
+            Запомните меня
+          </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
     </section>
+
+    <section class="modal modal-map">
+      <button type="button" class="modal-close">Закрыть</button>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+    </section>
+
   </body>
 </html>
